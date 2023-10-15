@@ -9,4 +9,8 @@ public class Cachorro extends Pet {
 	public Cachorro(String nome, int idade) {
 		super(nome, idade);
 	}
+	@Override
+	public String toString() {
+		return "Tipo de animal: Cachorro, Nome: " + super.getNome() + ", Idade: " + super.getIdade()+ " Ano(s)";
+	}
 }

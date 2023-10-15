@@ -9,5 +9,8 @@ public class Coelho extends Pet {
 	public Coelho(String nome, int idade) {
 		super(nome, idade);
 	}
-
+	@Override
+	public String toString() {
+		return "Tipo de animal: Coelho, Nome: " + super.getNome() + ", Idade: " + super.getIdade()+ " Ano(s)";
+	}
 }
