@@ -1,8 +1,8 @@
 package i_love_pets;
 
 public class Pet {
-	String nome;
-	int idade;
+	private String nome;
+	private int idade;
 	
 	public Pet() {
 		
