@@ -3,7 +3,7 @@ package i_love_pets;
 import java.util.ArrayList;
 
 public class PrestadorDeServicos extends Usuario {
-	ArrayList<String> especialidades;
+	private ArrayList<String> especialidades;
 
 	public PrestadorDeServicos() {
 		super();
