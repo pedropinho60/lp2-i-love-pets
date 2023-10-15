@@ -1,3 +1,7 @@
+package i_love_pets;
+
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
         ArrayList<Usuario> usuarios = new ArrayList<>();
@@ -13,23 +17,23 @@ public class Main {
         prestador2.cadastrarEspecialidade("Passeio de cachorros");
         usuarios.add(prestador2);
 
-        usuarios.add(new Tutor("Carlos"))
+        usuarios.add(new Tutor("Carlos"));
         usuarios.add(new Vendedor("Antonio"));
         
         pets.add(new Rato("Ratatui", 2));
         pets.add(new Cachorro("Scoby", 5));
         pets.add(new Gato("Tom", 4));
-        pets.add(new Coelho('Perna Curta', 6));
+        pets.add(new Coelho("Perna Curta", 6));
 
 
-        System.out.println("Lista de usuarios: ")
+        System.out.println("Lista de usuarios: ");
         for (Usuario usuario : usuarios) {
-            usuario.toString();
+        	System.out.println(usuario.toString());
         }
 
-        System.out.println("Lista de pets: ")
+        System.out.println("Lista de pets: ");
         for (Pet pet : pets) {
-            pet.toString();
+            System.out.println(pet.toString());
         }
 
     }

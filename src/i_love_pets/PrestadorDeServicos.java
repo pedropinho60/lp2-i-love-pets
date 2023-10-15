@@ -29,11 +29,14 @@ public class PrestadorDeServicos extends Usuario {
 
 	@Override
 	public String toString() {
-		String str = "Tipo de usuário: Prestador de serviços para pets, Especialidades: ";
+		String str = "Tipo de usuário: Prestador de serviços para pets, Nome: " + super.getNome() + ", Especialidades: ";
 		
-		for(String esp : especialidades) {
-			str.concat(esp);
-			str.concat(", ");
+		for(int i=0; i<especialidades.size(); i++) {
+			if(i != 0) {
+				str += ", ";	
+			}
+			
+			str += especialidades.get(i);
 		}
 		return str;
 	}
